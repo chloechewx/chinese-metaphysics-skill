@@ -36,6 +36,7 @@ schools and practitioners.
 npx -y skills add chloechewx/chinese-metaphysics-skill \
   --skill chinese-metaphysics
 ```
+Or just save 'chinese-metaphysics' folder as a zip file and upload into your Claude Skills.
 
 ## Requirements
 
