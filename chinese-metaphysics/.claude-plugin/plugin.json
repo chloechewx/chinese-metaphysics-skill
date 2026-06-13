@@ -1,0 +1,5 @@
+{
+  "name": "chinese-metaphysics",
+  "description": "Cast and interpret BaZi, Zi Wei Dou Shu, and Qi Men Dun Jia charts with deterministic Python scripts",
+  "version": "1.0.0"
+}
