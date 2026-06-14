@@ -3,6 +3,11 @@
 Run scripts/cast_bazi.py first. Interpret only from its output -- never
 recompute pillars, shensha, or luck pillars from memory.
 
+**Read the chart in isolation.** Base the reading only on the chart output in
+front of you. Do not pull in anything you happen to know about this person from
+elsewhere (their job, studies, travel, past chats, or other notes) -- it
+contaminates the reading. The chart speaks for itself.
+
 ## Ten gods: core meanings (relative to the Day Master)
 
 - 比肩 Friend: peers, independence, self-reliance, competition
@@ -87,23 +92,56 @@ Rules:
 - Close with the standing honesty note: year-branch matching uses one of
   a person's eight characters; real people beat tables.
 
-## Standard reading template
+## Output structure
 
-1. Chart verdict and the one or two loudest structural features
-2. Strengths (dominant gods, noble stars), weaknesses (attacked/weak gods,
-   punishment flags)
-3. Personality (day pillar nature + dominant gods + 华盖/孤辰-type stars)
-4. Career (which gods support which work modes; month-pillar stability)
-5. Timing questions (current decade flavor, named year analysis, better
-   windows ahead -- including favorable months when asked about a year)
-6. Cautions (who/what to avoid, derived from 劫财/劫煞/亡神 and weak spots)
+Write the reading in this order, using these exact section headings so every
+reading looks the same. Lead each section with the plain-English point, then
+name the technical reason in parentheses. Keep each section tight -- a few
+sentences, not a wall of text.
+
+### The short version
+One or two sentences: what kind of chart this is and the single feature that
+shapes everything else. The reader should get the gist here before any detail.
+
+### Your core nature
+The day pillar's basic temperament plus the one or two strongest ten gods,
+described as character traits in everyday language. Fold in standout stars
+(e.g. 华盖 artistic solitude, 孤辰 emotional self-sufficiency) only if present.
+
+### What you've got going for you
+Dominant gods and helpful (noble) stars, framed as real strengths the reader
+can lean on.
+
+### What to keep an eye on
+Weak or attacked gods and punishment flags, framed as areas to manage -- never
+as flaws or fate. Say what the issue actually looks like in daily life
+(e.g. "money tends to leak out faster than it comes in").
+
+### Work and money
+Which gods support which kinds of work, and how steady the career backdrop is
+(month-pillar stability). Translate into concrete work styles, not labels.
+
+### Timing
+Only when the reader asks about timing. Cover the current decade's flavour, any
+specific year they named, and better windows ahead (include favourable months
+if they asked about a particular year). Frame as "seasons that suit X", not
+"good year / bad year".
+
+### People to be mindful of
+Only when relevant. Who or what to handle with care, drawn from 劫财 / 劫煞 /
+亡神 and the chart's weak spots. Keep it about dynamics to watch, not warnings.
+
+End with one line reminding the reader this is a lens for reflection, not a
+forecast.
 
 ## Tone and honesty guardrails
 
-- This is a classical interpretive framework, not a prediction engine.
-  Present readings as a structured mirror for reflection.
-- Never present timing verdicts as instructions for major life decisions
-  (startups, marriage, medical); always point back to real-world factors.
-- Do not invent shensha or interactions not present in script output.
-- Translate every classical term on first use.
-- Frame "negative" flags constructively as management advice.
+- This is a classical framework for self-reflection, not a prediction engine.
+  Present the reading as a mirror, not a forecast.
+- Never turn timing into instructions for big decisions (starting a business,
+  marriage, anything medical). Always point back to real-world factors.
+- Don't invent stars (shensha) or interactions that aren't in the script output.
+- Explain every Chinese term the first time you use it, in plain words.
+- Write "negative" flags as things to manage, not things to fear.
+- Keep the language natural and direct. Skip the mystical register -- say what
+  a feature means for the reader's actual life.

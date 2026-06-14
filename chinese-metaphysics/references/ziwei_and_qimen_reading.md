@@ -2,6 +2,10 @@
 
 Run scripts/cast_ziwei.py first. Interpret only from its output.
 
+**Read the chart in isolation.** Use only the chart in front of you. Do not
+draw on anything you know about this person from elsewhere (job, studies,
+travel, past chats, or other notes) -- it contaminates the reading.
+
 ## The 14 main stars, one-line cores
 
 紫微 Emperor: dignity, leadership, needs capable support
@@ -45,6 +49,40 @@ Run scripts/cast_ziwei.py first. Interpret only from its output.
    with 天机 inside -> 天机自化忌). School-dependent technique (飞星派 /
    钦天四化); use it as supporting color, not as a primary verdict, and
    say it is school-specific if asked.
+
+## Output structure
+
+Same principle as BaZi: lead with the plain point, name the technical reason in
+parentheses, keep each section short. Use these headings:
+
+### The short version
+One or two sentences: the Life palace star and what kind of person it paints,
+plus the chart's single biggest theme (usually wherever 化忌 lands).
+
+### Who you are at the core
+Life palace star + brightness in plain terms (命宫). If the Life palace is
+empty, read the opposite palace it borrows from (迁移) and say so.
+
+### Where your weight settles
+The Body palace (身宫) -- the area life increasingly centres on after the
+mid-30s. Say which life domain it fuses with self-image.
+
+### Your driving themes
+The four transformations (四化): where gain and flow go (化禄), where power and
+control sit (化权), where reputation builds (化科), and the knot you keep
+circling back to (化忌). Name the 化忌 palace gently and constructively -- it's
+where the reader tends to over-focus, not a curse.
+
+### The area asked about
+Read the relevant palace as a system with its trine and opposite palaces
+(三方四正) -- e.g. career = Life + Career + Wealth + Travel together.
+
+### Timing
+Only when asked. The active decade (大限) becomes a second Life palace; say
+which stars and transformations it lights up, and where the decade's own 禄
+(gains) and 忌 (knot) fly. Same for the annual overlay (流年) on year questions.
+
+End with one line: this is a lens for reflection, not a forecast.
 
 ## Alternate palace meanings (use when the question fits)
 
@@ -97,16 +135,34 @@ system.
 
 ## Basic procedure
 
-1. Identify the 用神 (focus) for the question type: self = day stem palace
-   or 值符; the matter's counterpart = hour stem palace; money = 生门;
-   career = 开门; relationship = 六合; documents/exams = 景门 or 天辅.
-2. Locate the focus palace; read deity + star + gate + stem combination
-   and the palace's five-element relationship to the focus.
-3. Favorable gates landing in palaces that support the asker's day stem =
-   green light; 庚 sitting on the focus = obstruction; check 空亡 (void)
+1. Identify the 用神 (the "focus" -- the palace that stands for the thing being
+   asked about) for the question type: self = day stem palace or 值符; the
+   matter's counterpart = hour stem palace; money = 生门; career = 开门;
+   relationship = 六合; documents/exams = 景门 or 天辅.
+2. Locate the focus palace; read its deity + star + gate + stem together, and
+   how that palace's element relates to the focus.
+3. Favourable gates landing in palaces that support the asker's day stem =
+   green light; 庚 sitting on the focus = a real obstacle; check 空亡 (void)
    palaces -- matters there are hollow or delayed.
-4. Answer the specific question asked with a clear lean plus the main
-   caveat. Qi Men answers should be short and concrete.
+4. Answer the actual question with a clear lean and the one main caveat.
+
+## Output structure
+
+Qi Men answers are short and concrete -- a few sentences, not an essay. Use:
+
+### The answer
+Lead with the lean: yes / no / favourable / wait, in plain language. This is
+what the reader came for.
+
+### Why
+The one or two palace features driving it (gate, deity, star, or stem), each
+explained in a few words of plain English.
+
+### The catch
+The single most important caveat or condition. If a void (空亡) or 庚 obstacle
+is in play, this is where it goes.
+
+Always close by pointing back to the real-world basis of the decision.
 
 ## Guardrails
 

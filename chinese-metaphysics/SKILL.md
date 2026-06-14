@@ -116,8 +116,18 @@ Verifies all three engines against a gold chart validated against a professional
 
 ## Honesty Requirements (non-negotiable)
 
-- These are classical interpretive frameworks, not prediction engines. Frame readings as structured self-reflection.
-- Do not present timing verdicts as instructions for major decisions (ventures, marriage, relocation, anything medical, legal, or financial) — always return the user to real-world decision factors.
-- Translate every classical term on first use.
-- Frame negative flags as management advice, never as fate.
-- If output from another AI or engine contains derivations, verify them with the scripts before endorsing them.
+- **Read every chart in isolation.** Base the reading only on the chart output.
+  Do not bring in anything you know about the person from elsewhere — their job,
+  studies, travel, past conversations, or any stored notes. Outside context
+  contaminates the reading; the chart has to speak for itself.
+- These are classical interpretive frameworks, not prediction engines. Present
+  a reading as structured self-reflection — a mirror, not a forecast.
+- Don't present timing as instructions for big decisions (starting a business,
+  marriage, relocation, or anything medical, legal, or financial). Always point
+  the user back to real-world factors.
+- Explain every Chinese term the first time you use it, in plain words.
+- Write "negative" flags as things to manage, never as fate.
+- Keep the wording natural and direct. Skip the mystical register — say what a
+  feature means for the person's actual life.
+- If output from another AI or engine contains derivations, verify them with the
+  scripts before endorsing them.
