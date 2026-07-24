@@ -17,8 +17,8 @@ schools and practitioners.
   disagree (solar time correction, strength scoring, Life lord convention)
 - **Verification built in** — validate charts from other apps against
   our engine
-- **Production ready** — 16 regression tests ensure accuracy across
-  updates
+- **Production ready** — regression tests across every engine, including
+  the date-selection almanac suite, ensure accuracy across updates
 
 ## What you can do
 
@@ -26,6 +26,9 @@ schools and practitioners.
 - **Generate Zi Wei Dou Shu readings** — Purple Star charts with decade
   and annual forecasts
 - **Perform Qi Men divination** — determine auspicious timing for decisions
+- **Select auspicious dates (择日)** — almanac layer (宜/忌, 建除, 二十八宿,
+  hour-level detail) cross-referenced against a natal chart for a business
+  opening (开市), wedding, move, or signing
 - **Check compatibility** — cross-examine multiple natal branches
 - **Verify external charts** — reproduce charts from other practitioners
   and apps to compare methodology
@@ -55,6 +58,7 @@ Cast my BaZi: born 1990-05-15, 14:30, Singapore, female
 Other common requests:
 - "Give me a Zi Wei reading for the same chart"
 - "Is this a good time to start a new project?" (Qi Men timing)
+- "Pick an auspicious date to open my shop in August 2026" (择日)
 - "Check compatibility: my chart vs someone born 1988-03-22"
 - "I have a chart from [insert Screenshot] — does it match yours?"
 
@@ -64,8 +68,9 @@ Other common requests:
 python scripts/run_tests.py
 ```
 
-16 assertions against a verified gold chart. Run after any environment
-change or library upgrade.
+Verifies every engine against a verified gold chart and runs the
+date-selection almanac suite. Run after any environment change or
+library upgrade.
 
 ## Feedback & contributions
 

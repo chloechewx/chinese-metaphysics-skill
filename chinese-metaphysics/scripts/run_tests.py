@@ -16,10 +16,29 @@ import os
 HERE = os.path.dirname(os.path.abspath(__file__))
 FAILURES = []
 
+# This runner prints Chinese labels (宜/忌, pillars, shensha). On Windows the
+# console defaults to cp1252, which cannot encode them, so print() would raise
+# UnicodeEncodeError. Force this process's own output to UTF-8. No-op where
+# stdout is already UTF-8 (Linux/macOS).
+for _stream in (sys.stdout, sys.stderr):
+    try:
+        _stream.reconfigure(encoding="utf-8")
+    except (AttributeError, ValueError):
+        pass
+
+
+# Force UTF-8 for the child scripts and for decoding their output. The
+# casting scripts print Chinese (宜/忌, pillars, shensha); on Windows the
+# default console encoding is cp1252, which cannot encode those characters
+# and makes the scripts crash with UnicodeEncodeError. This does not touch
+# the casting scripts themselves.
+_UTF8_ENV = dict(os.environ, PYTHONUTF8="1", PYTHONIOENCODING="utf-8")
+
 
 def run(script, args):
     r = subprocess.run([sys.executable, os.path.join(HERE, script)] + args,
-                       capture_output=True, text=True, timeout=120)
+                       capture_output=True, text=True, encoding="utf-8",
+                       env=_UTF8_ENV, timeout=120)
     if r.returncode != 0:
         FAILURES.append(f"{script} exited {r.returncode}: {r.stderr.strip()[:300]}")
         return ""
@@ -85,6 +104,13 @@ out = run("cast_qimen.py", ["--datetime", "2026-06-12 10:20",
                             "--longitude", "103.85"])
 check("structure", out, "陽遁三局", "值符", "值使", "旬空")
 check("nine palaces rendered", out, "巽(SE)", "坎(N)", "中宫")
+
+print("== Zeri: date-selection almanac regression suite ==")
+# test_zeri.py is its own 20-check suite. Run it and fold its exit code
+# into this suite: exit 0 prints the pass line, any failure exits non-zero
+# and run() records it as a failure here.
+out = run("test_zeri.py", [])
+check("zeri suite passes", out, "All zeri tests passed.")
 
 print()
 if FAILURES:

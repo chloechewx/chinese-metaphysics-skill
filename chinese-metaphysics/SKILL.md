@@ -1,9 +1,9 @@
 ---
 name: chinese-metaphysics
-description: Cast and interpret Chinese metaphysics charts with verified deterministic calculation - BaZi (八字 Four Pillars), Zi Wei Dou Shu (紫微斗数 Purple Star), and Qi Men Dun Jia (奇门遁甲). Use this skill whenever the user asks for a BaZi reading, four pillars, day master, 用神, Zi Wei chart, purple star astrology, Qi Men divination, Chinese astrology, fortune reading from birth date/time, auspicious timing, luck pillars, annual forecast (流年), or asks to verify a chart from another app or practitioner. Also use it when the user gives a birth date + time + place and asks about personality, career timing, or compatibility in a Chinese metaphysics context. NEVER cast these charts from memory - the calendar math fails silently; always run the scripts.
+description: Cast and interpret Chinese metaphysics charts with verified deterministic calculation - BaZi (八字 Four Pillars), Zi Wei Dou Shu (紫微斗数 Purple Star), and Qi Men Dun Jia (奇门遁甲). Use this skill whenever the user asks for a BaZi reading, four pillars, day master, 用神, Zi Wei chart, purple star astrology, Qi Men divination, Chinese astrology, fortune reading from birth date/time, auspicious timing, luck pillars, annual forecast (流年), auspicious date selection (择日), a 吉日 or auspicious day, picking a date for a business opening (开市), wedding, move, or signing, or asks to verify a chart from another app or practitioner. Also use it when the user gives a birth date + time + place and asks about personality, career timing, or compatibility in a Chinese metaphysics context. NEVER cast these charts from memory - the calendar math fails silently; always run the scripts.
 license: MIT
 metadata:
-  version: "1.0.0"
+  version: "1.1.0"
 ---
 
 # Chinese Metaphysics (BaZi / Zi Wei Dou Shu / Qi Men Dun Jia)
@@ -17,8 +17,9 @@ Casting is deterministic and runs in code. Interpretation is classical and runs 
 | BaZi chart + luck pillars | `scripts/cast_bazi.py` | `--year YYYY` for annual overlay |
 | Zi Wei Dou Shu chart | `scripts/cast_ziwei.py` | `--time-index 0..12` if birth time unknown |
 | Qi Men Dun Jia divination | `scripts/cast_qimen.py` | use question time, not birth time |
+| Date selection almanac (择日) | `scripts/cast_zeri.py` | `--natal 亥,亥,辰,巳` cross-refs the natal chart; `--hours` for 時辰 detail |
 | Compatibility check | `scripts/check_compat.py` | always use this; never reason from one branch |
-| Verify all engines (post-change) | `scripts/run_tests.py` | 16 assertions against gold chart |
+| Verify all engines (post-change) | `scripts/run_tests.py` | gold-chart assertions plus the 择日 almanac suite |
 
 ## Prerequisites (once per session)
 
@@ -112,7 +113,7 @@ Run after any script change or environment change (library upgrades):
 python scripts/run_tests.py
 ```
 
-Verifies all three engines against a gold chart validated against a professional engine. Expects 16 assertions to pass.
+Verifies all engines against a gold chart validated against a professional engine, and runs the date-selection almanac suite (`test_zeri.py`, 20 checks). Every case must pass.
 
 ## Honesty Requirements (non-negotiable)
 
